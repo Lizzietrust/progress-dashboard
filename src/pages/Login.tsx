@@ -1,11 +1,8 @@
 import googleIcon from '../assets/google.svg'
 import { useNavigate } from 'react-router-dom';
 
-interface LoginProps {
-  onSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
-}
 
-const Login: React.FC<LoginProps> = () => {
+const Login = () => {
   const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -15,7 +12,7 @@ const Login: React.FC<LoginProps> = () => {
 
   return (
     <div className="flex items-center justify-center w-full h-screen bg-[#3855B3]">
-      <div className="bg-white w-[370.1px] h-[510.81px] rounded-lg shadow-xl p-6">
+      <div className="bg-white w-full sm:w-[370.1px] h-[510.81px] mx-3 sm:mx-0 rounded-lg shadow-xl p-6">
         <h1 className="text-center text-[21.25px] font-medium my-2 text-[#181819]">
           Login
         </h1>
